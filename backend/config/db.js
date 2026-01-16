@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/blog-cms', {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://harshhelaiya5@gmail.com:GauriHarsh@007@cluster0.cngehgz.mongodb.net/?appName=Cluster0/blog-cms', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
